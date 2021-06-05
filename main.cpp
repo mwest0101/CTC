@@ -13,7 +13,8 @@ int main(int argc,char *argv[],char *envp[]) {
 	int nlines=0;
 	string scol1,scol2;
 	int col1=0,col2=7;
-	char num[2];
+	char num1[1];
+	char num2[1];
 	string strCol;
 	
 	scol1=argv[1];scol2=argv[2];
