@@ -1,42 +1,46 @@
-#include <string.h> 
+#include <string> 
 #include <iostream>
-#include <stdlib.h> // libreria para cambia color
+#include <stdlib.h> 
+
+#include <bits/stdc++.h>
+// libreria para cambia color
 //#include <windows.h>
 
+//using std::cout; using std::endl;
+//using std::copy; using std::string;
 
+using namespace std;
 
-using std::cout; using std::endl;
-using std::copy; using std::string;
+string convToHex(char *data){
 
+//	char *resHex;
+	//sprintf(resHex,"%x", stoi(data));
+    //printf("Hex: %s", resHex);
+    
+//	int i = 12;
+    stringstream ss;
+    
+    ss << hex << stoi(data);
+    string res = ss.str(); 
+    cout << "res " << res << " - ";
+    
+    return res;
+}
 
 int main(int argc,char *argv[],char *envp[]) {
-	int nlines=0;
-	string scol1,scol2;
-	int col1=0,col2=7;
-	char num1[1];
-	char num2[1];
-	string strCol;
+	string par1;
+	string par2;
 	
-	scol1=argv[1];scol2=argv[2];
-	col1=stoi(scol1);	
-	col2=stoi(scol2);
-	
-	if (argc > 0){
-    	 nlines = argc;
-         for ( int i = 0; i<argc ; ++i ){
-         	cout << argv[i] << "\n";
-         	
-		 }
-	}
-	
+		
 	if (argc==3) cout << "Hay dos parametros"<< endl;
 
-	
+	par1=convToHex(argv[1]);
+	par2=convToHex(argv[2]);
 	
 
-	sprintf(num,"%x", col1); //it will print EC
-    printf("Hex: %s", num);
-
+    
+//    return res;
+    
 //	col2=stoi(scol2);
 	
 	/*
@@ -54,7 +58,7 @@ int main(int argc,char *argv[],char *envp[]) {
 //	system ("color 17"); //ejemplo 
     cout << "reset to default colors with NC" << endl;
     */
-    return 0;
+    return 1;
 }
 /*
     0 = Negro       8 = Gris
@@ -67,3 +71,14 @@ int main(int argc,char *argv[],char *envp[]) {
     7 = Blanco      F = Blanco brillante
   */  
     
+    
+    /*
+    
+    if (argc > 0){
+    	 nlines = argc;
+         for ( int i = 0; i<argc ; ++i ){
+         	cout << argv[i] << "\n";
+         	
+		 }
+	}
+	*/
