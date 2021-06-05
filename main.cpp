@@ -28,8 +28,7 @@ string convToHex(char *data){
 }
 
 int main(int argc,char *argv[],char *envp[]) {
-	string par1;
-	string par2;
+	string par1,par2,strCol;
 	
 		
 	if (argc==3) cout << "Hay dos parametros"<< endl;
@@ -37,6 +36,14 @@ int main(int argc,char *argv[],char *envp[]) {
 	par1=convToHex(argv[1]);
 	par2=convToHex(argv[2]);
 	
+	strCol="color "+ par1+par2;
+	cout << strCol<< endl;
+	
+	char arr[strCol.length() + 1]; 
+ 
+    strcpy(arr, strCol.c_str()); 
+		
+	system (arr); //ejemplo
 
     
 //    return res;
