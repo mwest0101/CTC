@@ -1,7 +1,7 @@
 ﻿  functions.cpp
   Generando código
-  2 of 109 functions ( 1.8%) were compiled, the rest were copied from previous compilation.
+  3 of 116 functions ( 2.6%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Generación de código finalizada
   ctc.vcxproj -> D:\pCpp\ctc\Release\ctc.exe
