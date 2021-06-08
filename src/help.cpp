@@ -16,7 +16,7 @@ void help(){
 	int cbf2=2;
 	int cbb2=0;
 		
-	SetColor(12,0);
+	SetColor(6,0);
 	cout << "**********************************************" << endl;
 	cout << "*   ____                        _            *" << endl;
 	cout << "*  / ____|                     | |           *" << endl;
@@ -42,7 +42,8 @@ void help(){
 	cout << "**********************************************" << endl;
     
 	cout << endl;
-		 SetColor(6,0);
+
+	SetColor(12,0);
 	cout << "*******************************************************" << endl;
 	cout << " Example: ctc [Back Color] [Font color] [Any text]" << endl;	
 	cout << "*******************************************************" << endl << endl;
@@ -115,16 +116,17 @@ void help(){
 	
 	SetColor(cbf2,cbb2);
 	cout << "****************************************" << endl;
-	
+	SetColor(11, 0);
 	cout << endl;
 		
 	cout << "Example	     	" << endl;
 	cout << "# ctc 7 0 Example test	" << endl;
 	cout << endl << endl;
-	cout << "(Developed by:                                       )" << endl;
-	cout << "(Maurcio West                                        )" << endl;
+	SetColor(10, 0);
+	cout << "(Developed by: Maurcio West                          )" << endl;
+	cout << "(                                                    )" << endl;
 	cout << "(e-mail:mauriciowest@gmail.com                       )" << endl;
 	cout << "(https://github.com/mwest0101/                       )" << endl;
 	cout << "(https://www.facebook.com/groups/322699759016752     )" << endl;
-	
+	//SetColor(11, 0);
 }

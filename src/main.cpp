@@ -9,13 +9,13 @@
 #include "ctc.h"
 #include "help.h"
 
-
-
 using namespace std;
 
 int main(int argc, char *argv[])
 {
 	int color1, color2;
+	anlizeString();
+	/*
 	if (argc > 1)
 	{
 
@@ -33,11 +33,11 @@ int main(int argc, char *argv[])
 
 		SetColor(color1, color2);
 		int i = 3;
-//		char *cadTemp;
+		char *cadTemp;
 		for (i; i < argc; i++){
 			cout << argv[i];
-//			cadTemp=argv[i];
-//			anlizeString(cadTemp);
+			cadTemp=argv[i];
+			anlizeString(cadTemp);
 //			cout << cadTemp;
 			
 		}
@@ -45,5 +45,6 @@ int main(int argc, char *argv[])
 		help();
 		SetColor(7,0);
 	}
+	*/
 	return 0;
 }
