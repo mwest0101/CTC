@@ -2,20 +2,18 @@
 #include <iostream>
 #include <windows.h>
 
-
-
 #include "config.h"
-#include "functions.h"
+
 #include "ctc.h"
 #include "help.h"
+#include "functions.h"
 
 using namespace std;
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[], char* envp[])
 {
 	int color1, color2;
-	anlizeString();
-	/*
+	
 	if (argc > 1)
 	{
 
@@ -33,18 +31,18 @@ int main(int argc, char *argv[])
 
 		SetColor(color1, color2);
 		int i = 3;
-		char *cadTemp;
-		for (i; i < argc; i++){
-			cout << argv[i];
-			cadTemp=argv[i];
-			anlizeString(cadTemp);
-//			cout << cadTemp;
-			
+
+		string cad;
+		
+		for (i; i < argc; i++){			
+			cad=cad+argv[i]+" ";
 		}
+		cad = cad.substr(0,cad.size()-1);
+		anlizeString(cad);
 	}else{		
 		help();
 		SetColor(7,0);
 	}
-	*/
+	
 	return 0;
 }

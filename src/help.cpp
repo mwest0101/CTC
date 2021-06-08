@@ -16,7 +16,7 @@ void help(){
 	int cbf2=2;
 	int cbb2=0;
 		
-	SetColor(6,0);
+	SetColor(14,0);
 	cout << "**********************************************" << endl;
 	cout << "*   ____                        _            *" << endl;
 	cout << "*  / ____|                     | |           *" << endl;
@@ -43,10 +43,18 @@ void help(){
     
 	cout << endl;
 
-	SetColor(12,0);
-	cout << "*******************************************************" << endl;
-	cout << " Example: ctc [Back Color] [Font color] [Any text]" << endl;	
-	cout << "*******************************************************" << endl << endl;
+	SetColor(7,0);
+	cout << "************************************************************************" << endl;
+	cout << "* Example: ctc [Back Color] [Font color] [Any text]                    *" << endl;	
+	cout << "*       This example lets only one space betwen word in [Any text]     *" << endl;
+	cout << "*                                                                      *" << endl;
+	cout << "* Example: ctc [Back Color] [Font color] \"[Any text]\"                  *" << endl;
+	cout << "*      This example, with \", leaves all spaces defined in [Any text]   *" << endl;
+	cout << "*                                                                      *" << endl;
+	cout << "* Example: ctc [Back Color] [Font color] [Any ((2,0)) text]            *" << endl;
+	cout << "*      To change the string colo in line you can uses (( [colors] ))   *" << endl;
+	cout << "************************************************************************" << endl << endl;
+
 	
 	SetColor(cbf2,cbb2);                           
 	cout << "****************************************" << endl;
@@ -116,17 +124,38 @@ void help(){
 	
 	SetColor(cbf2,cbb2);
 	cout << "****************************************" << endl;
-	SetColor(11, 0);
+	SetColor(7, 0);
 	cout << endl;
-		
-	cout << "Example	     	" << endl;
-	cout << "# ctc 7 0 Example test	" << endl;
-	cout << endl << endl;
-	SetColor(10, 0);
+	cout << "______________________________________________________" << endl;
+	cout << "(Examples:                                           )" << endl;
+	cout << "( ctc 4 0 Example    test                            )" << endl;
+	cout << "( Out:";
+	SetColor(4,0);
+	cout << "Example test";
+	SetColor(7, 0);cout << "                                   )" << endl;
+	cout << "(                                                    )" << endl;
+	cout << "( ctc 4 0 \"Example    test\"                          )" << endl;
+	cout << "( Out:";
+	SetColor(4,0);
+	cout << "Example    test";
+	SetColor(7, 0); cout << "                                )" << endl;
+	cout << "(                                                    )" << endl;
+	cout << "( ctc 2 0 test ((4,0)) color                         )" << endl;
+	cout << "( Out:";
+	SetColor(4, 0);	cout << "test";	SetColor(2, 0);	cout << " color";
+	SetColor(7, 0); cout << "                                     )" << endl;
+	cout << "______________________________________________________" << endl;
+
+
+	cout << endl;
+	
+	SetColor(7, 0);
+	cout << "______________________________________________________" << endl;
 	cout << "(Developed by: Maurcio West                          )" << endl;
 	cout << "(                                                    )" << endl;
-	cout << "(e-mail:mauriciowest@gmail.com                       )" << endl;
+	cout << "(e-mail:mauriciowest+wtdev@gmail.com                 )" << endl;
 	cout << "(https://github.com/mwest0101/                       )" << endl;
 	cout << "(https://www.facebook.com/groups/322699759016752     )" << endl;
+	cout << "______________________________________________________" << endl;
 	//SetColor(11, 0);
 }
