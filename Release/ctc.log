@@ -1,7 +1,6 @@
-﻿  help.cpp
-  Generando código
-  1 of 127 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
+﻿  Generando código
+  0 of 127 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Generación de código finalizada
   ctc.vcxproj -> D:\pCpp\ctc\Release\ctc.exe
