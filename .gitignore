@@ -31,4 +31,8 @@
 *.out
 *.app
 
+*.ipch
+*.suo
+*.db
+
 Release
