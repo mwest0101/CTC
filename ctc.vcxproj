@@ -143,7 +143,6 @@
     <ClCompile Include="src\functions.cpp" />
     <ClCompile Include="src\help.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\prueba.cpp" />
     <ClCompile Include="src\StdAfx.cpp" />
   </ItemGroup>
   <ItemGroup>

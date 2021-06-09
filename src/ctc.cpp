@@ -13,7 +13,7 @@ namespace {
 HANDLE hCon;
 
 
-void SetColor(int foreground,int background){
+void SetColor(int background,int foreground){
 	
 
 	if (hCon == NULL)
